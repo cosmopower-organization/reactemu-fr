@@ -34,8 +34,8 @@ params_fr =  {'Omega_m':        [0.3164],
               'n_s':            [0.9647],
               'A_s':            [2.1031e-9],
               'f_R0':           [1e-6],
-              'z':              [0.],
               'Omega_nu':       [0.0014],
+              'z':              [0.],
               }
 
 # predictions (= forward pass through the network) -> 10^predictions
@@ -45,7 +45,17 @@ spectra = cp_nn.ten_to_predictions_np(params_fr)
 
 ## Citation
 
-If you use `ReACTemu-f(R)` please cite its release paper as well as the `CosmoPower` release [paper](https://doi.org/10.1093/mnras/stac064):
+If you use `ReACTemu-f(R)` please cite its release [paper](https://arxiv.org/abs/2305.06350) as well as the `CosmoPower` release [paper](https://doi.org/10.1093/mnras/stac064):
+
+    @article{SpurioMancini2023,
+        author = "Spurio Mancini, A. and Bose, B.",
+        title = "{On the degeneracies between baryons, massive neutrinos and f(R) gravity in Stage IV cosmic shear analyses}",
+        eprint = "2305.06350",
+        archivePrefix = "arXiv",
+        primaryClass = "astro-ph.CO",
+        month = "5",
+        year = "2023"
+    }
 
     @article{SpurioMancini2022,
              title={CosmoPower: emulating cosmological power spectra for accelerated Bayesian inference from next-generation surveys},
@@ -61,3 +71,18 @@ If you use `ReACTemu-f(R)` please cite its release paper as well as the `CosmoPo
              month={Jan},
              pages={1771–1788}
              }
+ 
+# License
+
+``ReACTemu-f(R)`` is released under the GPL-3 license (see [LICENSE](https://github.com/cosmopower-organization/reactemu-fr/blob/main/LICENSE)) subject to the non-commercial use condition (see [LICENSE_EXT](https://github.com/cosmopower-organization/reactemu-fr/blob/main/LICENSE_EXT)).
+
+    ReACTemu-f(R)
+    Copyright (C) 2023 A. Spurio Mancini & contributors
+
+    This program is released under the GPL-3 license (see LICENSE),
+    subject to a non-commercial use condition (see LICENSE_EXT).
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
